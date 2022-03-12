@@ -1,0 +1,18 @@
+.ant-breadcrumb {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.85);
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    font-feature-settings: 'tnum', "tnum";
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 14px;
+    margin-top: -24px;
+    padding: 9px;
+}
+.spacer{
+   /* margin-left: 30%; */
+   flex: 1 1 auto;
+}

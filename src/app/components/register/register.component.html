@@ -1,0 +1,103 @@
+<app-navbar></app-navbar>
+<div class="background">
+    <div class="container container-table">
+      <div class="row vertical-center-row">
+          <div class="text-center col-md-4 col-md-offset-4">
+            <nz-card style="width:360px;">
+              <h2>Register</h2>
+              <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+                <nz-form-item>
+                  <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="email">E-mail</nz-form-label>
+                  <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="The input is not valid E-mail!">
+                    <input nz-input placeholder="Enter your Email" formControlName="email" id="email" />
+                  </nz-form-control>
+                </nz-form-item>
+                
+               
+                <nz-form-item>
+                  <nz-form-label
+                    [nzSm]="6"
+                    [nzXs]="24"
+                    nzFor="firstname"
+                    nzRequired
+                    
+                  >
+                    <span>Firstname</span>
+                  </nz-form-label>
+                  <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="Please enter your firstname!">
+                    <input nz-input id="firstname" placeholder="Enter your firstname" formControlName="firstname" />
+                  </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                    <nz-form-label
+                      [nzSm]="6"
+                      [nzXs]="24"
+                      nzFor="lastname"
+                      nzRequired
+                     
+                    >
+                      <span>Lastname</span>
+                    </nz-form-label>
+                    <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="Please enter your lastname!">
+                      <input nz-input id="lastname" placeholder="Enter your lastname" formControlName="lastname" />
+                    </nz-form-control>
+                  </nz-form-item>
+                  <nz-form-item>
+                    <nz-form-label
+                      [nzSm]="6"
+                      [nzXs]="24"
+                      nzFor="phonenumber"
+                      
+                     
+                    >
+                      <span>Phone </span>
+                    </nz-form-label>
+                    <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="Please enter your phonenumber!">
+                      <input nz-input id="phonenumber" placeholder="Enter your number" formControlName="phonenumber" />
+                    </nz-form-control>
+                  </nz-form-item>
+             
+                <nz-form-item>
+                  <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="company" >Company</nz-form-label>
+                  <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="Please enter company!">
+                    <input nz-input id="company" formControlName="company" placeholder="Please enter company" />
+                  </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                    <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="password" nzRequired>Password</nz-form-label>
+                    <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="Please input your password!">
+                      <input
+                        nz-input
+                        type="password"
+                        id="password"
+                        formControlName="password"
+                        placeholder="Enter your password"
+                      />
+                    </nz-form-control>
+                  </nz-form-item>
+                  <nz-form-item>
+                    <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="password" nzRequired>Are you</nz-form-label>
+                    <nz-form-control>
+                        <nz-radio-group formControlName="accounttype"  nzName="radiogroup">
+                            <label nz-radio nzValue="user">User</label>
+                            <label nz-radio nzValue="agency">Agency</label>
+                          </nz-radio-group>
+                    </nz-form-control>
+                  </nz-form-item>
+                 
+               <input type="text" formControlName="signup_mod" hidden>
+                <nz-form-item nz-row class="register-area">
+                  <nz-form-control [nzSpan]="14" [nzOffset]="6">
+                    <button nz-button nzType="primary">Register</button>  <br>
+                    <a routerLink="/login" class="mt-4" >Already register! Login</a>
+                  </nz-form-control>
+                
+                </nz-form-item> 
+              </form>
+            </nz-card>
+          </div>
+      </div>
+    </div>
+  </div>
+
+

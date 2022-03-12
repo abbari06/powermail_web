@@ -1,0 +1,38 @@
+.login-form {
+    max-width: 300px;
+  }
+
+  .login-form-margin {
+    margin-bottom: 16px;
+  }
+
+  .login-form-forgot {
+    float: right;
+  }
+
+  .login-form-button {
+    width: 100%;
+  }
+  html, body, .container-table {
+    height: 100%;
+}
+.container-table {
+    width:100vw;
+  height:150px;
+ 
+}
+.vertical-center-row {
+   margin:auto;
+  width:49%;
+  padding:63px;
+  text-align:center;
+  margin-top: -34px;
+
+}
+.background{
+  background-image: url(../../../assets/images/abstract-background-made-halftone-dots-white-gray-colors_444390-4058.jpg);
+
+  width: 100%;
+  height: 100%;
+}
+

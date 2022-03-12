@@ -1,0 +1,21 @@
+<nz-header>
+    <ul style="background-color: #df0031;" nz-menu nzTheme="lite" nzMode="horizontal">
+        <li nz-menu-item>Powermail</li>
+        <li nz-menu-item routerLink="home" [routerLinkActive]="['active']" >Dashboard</li>
+      <li nz-menu-item routerLink="contacts" [routerLinkActive]="['active']" >Contacts</li>
+      <li nz-menu-item>Prospects</li>
+      <li nz-menu-item>Settings</li>
+      <a  style="float: right; color: white;"  nz-dropdown [nzDropdownMenu]="menu"> 
+      Abdul Bari
+        <i nz-icon nzType="down"></i>
+      </a>
+      <nz-dropdown-menu #menu="nzDropdownMenu">
+        <ul nz-menu nzSelectable>
+          <li nz-menu-item>Profile</li>
+          <li nz-menu-item nzDanger routerLink="" >Logout</li>
+          
+        </ul>
+      </nz-dropdown-menu>
+    </ul>
+  </nz-header>
+ 

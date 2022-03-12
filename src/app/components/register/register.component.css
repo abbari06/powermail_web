@@ -1,0 +1,58 @@
+[nz-form] {
+    max-width: 600px;
+  }
+
+  .phone-select {
+    width: 70px;
+  }
+
+  .register-are {
+    margin-bottom: 8px;
+  }
+  .container-table {
+    width:98vw;
+  height:150px;
+ 
+}
+.vertical-center-row {
+   margin:auto;
+  width:49%;
+  padding:63px;
+  text-align:center;
+  margin-top: -34px;
+
+}
+.background{
+  background-image: url(../../../assets/images/abstract-background-made-halftone-dots-white-gray-colors_444390-4058.jpg);
+  width: 100%;
+  height: 100%;
+}
+.ant-btn-primary {
+  color: #fff;
+  border-color: #1890ff;
+  background: #1890ff;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+  width: 100%;
+}
+ant-input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-variant: tabular-nums;
+  list-style: none;
+  font-feature-settings: 'tnum', "tnum";
+  position: relative;
+  display: inline-block;
+  width: 130%;
+  min-width: 0;
+  padding: 4px 11px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  line-height: 1.5715;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  transition: all 0.3s;
+}

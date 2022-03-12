@@ -1,0 +1,43 @@
+/* .logo {
+    width: 120px;
+    height: 31px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px 24px 16px 0;
+    float: left;
+  }
+  [nz-menu] {
+    line-height: 64px;
+  }
+
+  nz-breadcrumb {
+    margin: 16px 0;
+  }
+
+  nz-content {
+    padding: 0 50px;
+  }
+
+  nz-footer {
+    text-align: center;
+  }
+
+  .inner-content {
+    background: #fff;
+    padding: 24px;
+    min-height: 280px;
+  } */
+  .ant-layout-header {
+    height: 64px;
+    padding: 0 50px;
+    color: white;
+    line-height: 64px;
+    /* background: #001529; */
+    background: white;
+}
+
+  .logo {
+        color: black;
+        font-size: 26px;
+        font-family: cursive;
+        font-weight: bold;
+    }

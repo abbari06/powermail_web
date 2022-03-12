@@ -1,0 +1,22 @@
+<nz-breadcrumb >
+   <nz-breadcrumb-item>All Contacts</nz-breadcrumb-item>
+   <nz-breadcrumb-item>Contacts</nz-breadcrumb-item>
+   <span class="spacer" ></span>
+  
+   <button nz-button [nzType]="'primary'" (click)="showModal()"><span>Show Modal</span></button>
+
+   <button nz-button nzType="primary" style="margin-left: 12px;">Import contact</button>
+
+
+</nz-breadcrumb>
+ 
+ 
+  
+<p>contacts works!</p>
+    <nz-modal [(nzVisible)]="isVisible" nzTitle="The first Modal" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+      <ng-container *nzModalContent>
+        <p>Content one</p>
+        <p>Content two</p>
+        <p>Content three</p>
+      </ng-container>
+    </nz-modal>
