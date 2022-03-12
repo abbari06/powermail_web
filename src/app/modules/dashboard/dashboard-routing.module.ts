@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactsComponent } from './components/contacts/showcontacts/contacts/contacts.component';
+import { ContactsComponent } from './components/contacts/contacts-table/contacts.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 
