@@ -1,3 +1,4 @@
+import { ChooseProfileComponent } from './components/choose-profile/choose-profile.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactsComponent } from './components/contacts/contacts-table/contacts.component';
@@ -9,7 +10,9 @@ const routes: Routes = [
 [
   {path:'contacts', component:ContactsComponent},
   {path:'home', component:HomeComponent},
-  {path:'' , redirectTo:'/dashboard/home', pathMatch:'full'}
+  {path:'' , redirectTo:'/dashboard/home', pathMatch:'full'},
+  {path:'choose-profile', component: ChooseProfileComponent},
+
 ]}
 ];
 

@@ -1,0 +1,25 @@
+
+<div style="padding: 100px;">
+
+    <button nz-button nzType="dashed"  nzDanger nzBlock style="font-size: 18px; font-weight: 650; height: 55px; ">
+        <i  style="font-size: 40px;"  nz-icon nzType="user-add"></i>Add Profile</button>
+ 
+    
+        <nz-card class="text-center" nzHoverable style="width: 400px; margin-top: 30px; "  [nzActions]="[actionSetting]">
+            <nz-card-meta nzTitle="zeeshan+1@gmail.com"></nz-card-meta>
+            <div>
+                <p style="padding-top: 14px; font-weight: 700;">Name: Zeeshan</p>
+                <p style="padding-top: 9px; font-weight: 700">Company: Alfa Minds Tech</p>
+            </div>
+
+            <ng-template #actionSetting >
+                <button nz-button nzType="primary" nzDanger nzShape="circle"><i nz-icon nzType="login"></i></button>
+            </ng-template>
+
+        </nz-card>
+
+        
+
+        
+
+</div>

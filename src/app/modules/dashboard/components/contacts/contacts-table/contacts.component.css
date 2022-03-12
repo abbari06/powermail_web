@@ -16,3 +16,9 @@
    /* margin-left: 30%; */
    flex: 1 1 auto;
 }
+
+.customEdges{
+    margin-top: 100px;
+    margin-left: 100px;    
+    margin-right: 100px;   
+}

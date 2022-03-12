@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ContactsComponent } from './components/contacts/contacts-table/contacts.component';
 import { HomeComponent } from './components/home/home.component';
 import { DashboardZorroModule } from './dasboard-zorro.module';
+import { ChooseProfileComponent } from './components/choose-profile/choose-profile.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { DashboardZorroModule } from './dasboard-zorro.module';
     FooterComponent,
     ContactsComponent,
     HomeComponent,
+    ChooseProfileComponent
     
   ],
   imports: [

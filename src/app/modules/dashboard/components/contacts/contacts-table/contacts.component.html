@@ -1,22 +1,61 @@
-<nz-breadcrumb >
-   <nz-breadcrumb-item>All Contacts</nz-breadcrumb-item>
-   <nz-breadcrumb-item>Contacts</nz-breadcrumb-item>
-   <span class="spacer" ></span>
-  
-   <button nz-button [nzType]="'primary'" (click)="showModal()"><span>Show Modal</span></button>
+<nz-breadcrumb>
+  <nz-breadcrumb-item>All Contacts</nz-breadcrumb-item>
+  <nz-breadcrumb-item>Contacts</nz-breadcrumb-item>
+  <span class="spacer"></span>
 
-   <button nz-button nzType="primary" style="margin-left: 12px;">Import contact</button>
+  <button nz-button [nzType]="'primary'" (click)="showModal()"><span>Show Modal</span></button>
 
+  <button nz-button nzType="primary" style="margin-left: 12px;">Import contact</button>
 
 </nz-breadcrumb>
- 
- 
-  
-<p>contacts works!</p>
-    <nz-modal [(nzVisible)]="isVisible" nzTitle="The first Modal" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
-      <ng-container *nzModalContent>
-        <p>Content one</p>
-        <p>Content two</p>
-        <p>Content three</p>
-      </ng-container>
-    </nz-modal>
+<!-- add contacts -->
+<nz-modal [(nzVisible)]="isVisible" nzTitle="The first Modal" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+  <ng-container *nzModalContent>
+    <p>Content one</p>
+    <p>Content two</p>
+    <p>Content three</p>
+  </ng-container>
+</nz-modal>
+
+
+<!-- show contacts -->
+
+
+<div class="customEdges">
+  <nz-table #borderedTable nzBordered nzShowSizeChanger [nzData]="listOfRandomUser" [nzFrontPagination]="false"
+    [nzLoading]="loading" [nzTotal]="total" [nzPageSize]="pageSize" [nzPageIndex]="pageIndex"
+    (nzQueryParams)="onQueryParamsChange($event)">
+
+    <thead>
+      <tr>
+        <th nzColumnKey="firstname"[nzSortFn]="true">First Name</th>
+        <th nzColumnKey="lastname"[nzSortFn]="true">Last Name</th>
+        <th nzColumnKey="email"[nzSortFn]="true">Email</th>
+        <th nzColumnKey="company"[nzSortFn]="true">Company</th>
+        <th nzColumnKey="role"[nzSortFn]="true">Role</th>
+        <th nzColumnKey="label"[nzSortFn]="true">Label-1</th>
+        <th nzColumnKey="label1"[nzSortFn]="true">Label-2</th>
+        <th nzColumnKey="label2"[nzSortFn]="true">Label-3</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of listOfRandomUser">
+        <td>{{ data.firstname }} </td>
+        <td>{{ data.lastname }}</td>
+        <td>{{ data.email }}</td>
+        <td>{{ data.company }}</td>
+        <td>{{ data.role }}</td>
+        <td>{{ data.label }}</td>
+        <td>{{ data.label1 }}</td>
+        <td>{{ data.label2 }}</td>
+        <td>
+          <button nz-button nzType="primary" nzShape="circle"><i nz-icon nzType="edit"></i></button>
+          <nz-divider nzType="vertical"></nz-divider>
+          <button nz-button nzType="primary" nzDanger nzShape="circle"><i nz-icon nzType="delete"></i></button>
+
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
+</div>
